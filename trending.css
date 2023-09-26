@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&family=PT+Serif:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+}
+
+
+
+/* -------start the header------- */
+
+/* nav */
+header nav {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: rgb(38, 49, 54);
+
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+
+nav a {
+    color: #f0f0f0;
+    border-radius: 1rem;
+    padding: 10px;
+    text-decoration: none;
+    margin: 0 .5rem;
+}
+
+nav a:hover {
+    color: #49bf3c;
+    box-shadow: 2px 2px 5px #49bf3c;
+}
+
+nav a:active {
+    box-shadow: 4px 4px 7px #49bf3c;
+}
+
+@media (max-width :426px) {
+    header nav {
+        flex-direction: column;
+    }
+
+
+    nav a {
+        margin: 5px;
+    }
+
+}
+
+
+
+/*  start the top right icons  */
+#icons {
+    display: flex;
+    justify-content: end;
+    background-color: rgb(38, 49, 54);
+}
+
+#icons img:not(#logo) {
+    background-color: rgb(38, 49, 54);
+    margin: 2rem 1rem;
+    background-color: #49bf3c;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    border-radius: 30%;
+    padding: 7px;
+}
+
+#icons img:not(#logo):active {
+    box-shadow: 2px 2px 5px #49bf3c;
+}
+
+#icons img:not(#logo):hover {
+    transition-property: all;
+    transition-duration: 0.1s;
+    transform: scale(1.2);
+}
+/* finish the top right icons */
+
+
+
+#logo {
+    margin: 1rem;
+    margin-right: auto;
+    background-color: rgb(38, 49, 54);
+    width: 5rem;
+    height: 5rem;
+}
+
+#logo:hover {
+    transition-property: all;
+    transition-duration: 1s;
+    transform: rotate(1080deg);
+    width: 7rem;
+    height: 7rem;
+}
+
+
+/* search box */
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #49bf3c;
+}
+
+button:active {
+    transition-property: all;
+    transition-duration: 0.1s;
+    transform: scale(1.1);
+}
+
+input {
+    height: 1.5rem;
+}
+
+form {
+    margin: 3rem 0 0 0;
+}
+
+form:hover {
+    transition-property: all;
+    transition-duration: 0.3s;
+    transform: scale(1.2) translateX(-10%);
+}
+
+@media (max-width :426px) {
+
+    form {
+        display: none;
+    }
+
+    h1 {
+        display: none;
+    }
+
+}
+/* -------finish the header------- */
+
+
+
+h2 {
+    font-size: 2.5em;
+    margin:1rem;
+}
+
+p {
+    margin-left: 2rem;
+    margin: 1rem;
+    font-size: 1.5em;
+}
+
+
+h1 {
+    margin-right: auto;
+    margin-top: 1.2rem;
+    font-size: 4em;
+    text-shadow: 2rem;
+    color: #49bf3c;
+}
+
+
+
+/* the first img */
+.first-imege{
+    width: 80%;
+    height: 30%;
+    border: none;
+    border-radius: 10px;
+}
+
+.continer-image{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width :426px){
+    #first-image{
+        height: 10%;
+    }
+}
+
+
+
+
+/*in list */
+.one{
+    margin: 10rem 2rem;
+}
+
+.one img{
+    width: 60%;
+    border: none;
+    border-radius: 10px;
+}
+
+.one img:hover{
+    transition-property: all;
+    transition-duration: 0.3s;
+    transform: scale(1.05);
+    border: none;
+    border-radius: 15px;
+    margin: 1rem 0 1rem .5rem; 
+}
+
+.one h3{
+    font-size: 2rem;
+}
+
+.one li{
+    margin: 10rem 2rem;
+}
+
+
+
+
+/* start 10 cards in the end of page  */
+
+div{
+     border: 2px solid black;
+    border-radius: 10px;
+    margin: 5rem ;
+    display: flex;
+    align-items: center;
+    flex-direction: column ;
+    box-sizing: border-box;
+}
+
+.article {
+    display: flex;
+    margin: 2% 0;
+    width: 90%;
+    
+}
+
+@media (max-width:1065px){
+    .article{
+            flex-direction: column;
+            border: none;
+
+    }
+}
+
+.article section {
+    box-sizing: border-box;
+    border: 2px solid;
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
+.article section:hover{
+    transition-property: all;
+    transition-duration: 0.3s;
+    transform: scale(1.05);
+    box-shadow: 5px 5px 5px #49bf3c;}
+
+@media (max-width:869px){
+    .article section {
+        width: auto;
+    }
+}
+
+.article section img {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+}
+
+.article section h3 {
+    color: #49bf3c;
+    margin-top: 1em;
+}
+
+
+@media (max-width:426px){
+   h2{
+    font-size: 2rem;
+   }
+
+   .one h3{
+    font-size: 1.5em;
+   }
+
+   .article section h3{
+    font-size: .75em;
+   }
+
+   .article section a{
+    font-size: .75em;
+   }
+}
+
+
+.article section a{
+    color: #f0f0f0;
+    border-radius: 1rem;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 1em;
+}
+
+.article section a:hover {
+    color: #49bf3c;
+    box-shadow: 2px 2px 5px #49bf3c;
+}
+
+.article section a:active {
+    box-shadow: 4px 4px 7px #49bf3c;
+}
+/* finish 10 cards in the end of page  */
+

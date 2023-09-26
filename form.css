@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&family=PT+Serif:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+}
+
+
+
+/* -------start the header------- */
+
+/* nav */
+header nav {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: rgb(38, 49, 54);
+
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+
+nav a {
+    color: #f0f0f0;
+    border-radius: 1rem;
+    padding: 10px;
+    text-decoration: none;
+    margin: 0 .5rem;
+}
+
+nav a:hover {
+    color: #49bf3c;
+    box-shadow: 2px 2px 5px #49bf3c;
+}
+
+nav a:active {
+    box-shadow: 4px 4px 7px #49bf3c;
+}
+
+@media (max-width :426px) {
+    header nav {
+        flex-direction: column;
+    }
+
+
+    nav a {
+        margin: 5px;
+    }
+
+}
+
+
+
+/*  start the top right icons  */
+#icons {
+    display: flex;
+    justify-content: end;
+    background-color: rgb(38, 49, 54);
+}
+
+#icons img:not(#logo) {
+    background-color: rgb(38, 49, 54);
+    margin: 2rem 1rem;
+    background-color: #49bf3c;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    border-radius: 30%;
+    padding: 7px;
+}
+
+#icons img:not(#logo):active {
+    box-shadow: 2px 2px 5px #49bf3c;
+}
+
+#icons img:not(#logo):hover {
+    transition-property: all;
+    transition-duration: 0.1s;
+    transform: scale(1.2);
+}
+
+/* finish the top right icons */
+
+
+
+#logo {
+    margin: 1rem;
+    margin-right: auto;
+    background-color: rgb(38, 49, 54);
+    width: 5rem;
+    height: 5rem;
+}
+
+#logo:hover {
+    transition-property: all;
+    transition-duration: 1s;
+    transform: rotate(1080deg);
+    width: 7rem;
+    height: 7rem;
+}
+
+
+/* search box */
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #49bf3c;
+}
+
+button:active {
+    transition-property: all;
+    transition-duration: 0.1s;
+    transform: scale(1.1);
+}
+
+input {
+    height: 1.5rem;
+}
+
+form {
+    margin: 3rem 0 0 0;
+}
+
+form:not(#form-sign):hover {
+    transition-property: all;
+    transition-duration: 0.3s;
+    transform: scale(1.2) translateX(-10%);
+}
+
+@media (max-width :426px) {
+
+    form {
+        display: none;
+    }
+
+    h1 {
+        display: none;
+    }
+
+}
+
+/* -------finish the header------- */
+
+
+
+/* the text show in >tablet */
+#maz {
+    display: flex;
+    justify-content: center;
+}
+
+#max {
+    color: red;
+}
+
+@media screen and (min-width:769px) {
+    #max {
+        display: none;
+    }
+}
+
+
+
+body {
+    background-color: #49bf3c;
+}
+
+h1 {
+    margin-right: auto;
+    margin-top: 1.2rem;
+    font-size: 4em;
+    text-shadow: 2rem;
+    color: #49bf3c;
+}
+
+/* join first webpage */
+#continer {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:769px) {
+    #continer {
+        display: none;
+    }
+
+    h2 {
+        font-size: 1em;
+        text-decoration: underline;
+    }
+
+    #formalite {
+        display: none;
+    }
+
+    /* 
+    h3{
+
+    } */
+}
+
+/* form */
+#formalite {
+    border: 3px solid black;
+    width: 70%;
+    /* margin-left: 14%; */
+}
+
+#h-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 3rem;
+    font-size: 2rem;
+}
+
+fieldset {
+    margin: 2rem;
+    border: 3px solid black;
+    font-size: 2em;
+}
+
+fieldset:hover {
+    transform: all;
+    transition-duration: .5s;
+    transform: scale(1.05);
+    box-sizing: border-box;
+}
+
+fieldset input {
+    margin: .5rem;
+    background-color: rgb(180, 180, 180);
+    width: 38%;
+    height: 2.5em;
+}
+
+
+/* button */
+#Continue {
+    background-color: black;
+    color: white;
+    width: 10em;
+    height: 2em;
+    font-size: 2.5em;
+    margin: .8em;
+}
+
+.test {
+    display: flex;
+    justify-content: center;
+}
+
+#forgot {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+#forgot a {
+    color: black;
+    text-decoration: underline red;
+}
+
+
+/* footer */
+footer {
+    background-color: black;
+    width: 100%;
+    height: 1.5em;
+    margin-top: 5em;
+}
+
+footer div p {
+    color: white;
+}
