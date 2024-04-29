@@ -23,10 +23,6 @@ getName()
     // console.log(data);
     for (let i = 0; i < data.length; i++) {
       cardsTitle[i].innerHTML = data[i].cardN;
-    for (let i = 0; i < data.length; i++) {
-      for (let j = 0; j < cardsTitle.length; j++) {
-        cardsTitle[i].innerHTML = data[i].cardN;
-      }
     }
   })
   .catch((er) => {
