@@ -18,6 +18,7 @@ const getName = () => {
 getName()
   .then((data) => {
     for (let i = 0; i < data.length; i++) {
+      textCard[i].innerHTML = data[i].moviesName;
       for (let j = 0; j < textCard.length; j++) {
         textCard[i].innerHTML = data[i].moviesName;
       }
